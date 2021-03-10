@@ -1,167 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Progressive Enhancement Explained</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="styles/main.css">
-	<title>Progressive Enhancement Explained</title>
-</head>
+  <body>
+    <div>
+      <div>
+        <header>
+          <h1>Progressive Enhancement Explained</h1>
+          <svg
+            width="100"
+            height="99"
+            viewBox="0 0 100 99"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M99.5 54V98.5H0.5V54C0.5 26.6619 22.6619 4.5 50 4.5C77.3381 4.5 99.5 26.6619 99.5 54Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path d="M16 40H15V41H16V40Z" fill="#DC143C" />
+            <path
+              d="M38.5 34.5H14.5V58.5H38.5V34.5Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path d="M34 39H19V54H34V39Z" fill="black" />
+            <path
+              d="M85.5 34.5H61.5V58.5H85.5V34.5Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M65.5 67.5H34.5V91.5H65.5V67.5Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path d="M81 39H66V54H81V39Z" fill="black" />
+            <path
+              d="M60.5 71.5H39.5V87.5H60.5V71.5Z"
+              fill="black"
+              stroke="black"
+            />
+            <path
+              d="M52.5 7.5H47.5V13.5H52.5V7.5Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M56.5 5C56.5 6.17733 55.8328 7.29036 54.6591 8.12867C53.4865 8.96629 51.8408 9.5 50 9.5C48.1592 9.5 46.5135 8.96629 45.3409 8.12867C44.1672 7.29036 43.5 6.17733 43.5 5C43.5 3.82267 44.1672 2.70964 45.3409 1.87133C46.5135 1.03371 48.1592 0.5 50 0.5C51.8408 0.5 53.4865 1.03371 54.6591 1.87133C55.8328 2.70964 56.5 3.82267 56.5 5Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M14.4018 10.4759L10.8568 14.0019L15.088 18.2559L18.633 14.7299L14.4018 10.4759Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M15.0976 5.89762C15.9278 6.73235 16.2397 7.99204 15.9987 9.41405C15.758 10.8349 14.9676 12.3738 13.6625 13.672C12.3573 14.9701 10.8142 15.7522 9.39205 15.9853C7.96876 16.2186 6.71077 15.9 5.88052 15.0653C5.05026 14.2305 4.73843 12.9708 4.97936 11.5488C5.2201 10.128 6.0105 8.58905 7.31564 7.29092C8.62078 5.99278 10.1639 5.21066 11.5861 4.97757C13.0093 4.74429 14.2673 5.06289 15.0976 5.89762Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M11.889 8.7071L11.5355 8.35355L8.35351 11.5355L8.70706 11.8891L11.889 8.7071Z"
+              fill="#DC143C"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <path
+              d="M8.7071 8.64645L8.35355 9L11.5355 12.182L11.8891 11.8284L8.7071 8.64645Z"
+              fill="#DC143C"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <path
+              d="M85.9384 10.4759L89.4834 14.0019L85.2522 18.2559L81.7072 14.7299L85.9384 10.4759Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M85.2426 5.89762C84.4123 6.73235 84.1005 7.99204 84.3414 9.41405C84.5821 10.8349 85.3725 12.3738 86.6777 13.672C87.9828 14.9701 89.526 15.7522 90.9481 15.9853C92.3714 16.2186 93.6294 15.9 94.4596 15.0653C95.2899 14.2305 95.6017 12.9708 95.3608 11.5488C95.1201 10.128 94.3296 8.58905 93.0245 7.29092C91.7194 5.99278 90.1762 5.21066 88.7541 4.97757C87.3308 4.74429 86.0728 5.06289 85.2426 5.89762Z"
+              fill="#DC143C"
+              stroke="black"
+            />
+            <path
+              d="M88.451 8.7071L88.8046 8.35355L91.9866 11.5355L91.633 11.8891L88.451 8.7071Z"
+              fill="#DC143C"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <path
+              d="M91.633 8.64645L91.9866 9L88.8046 12.182L88.4511 11.8284L91.633 8.64645Z"
+              fill="#DC143C"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <path
+              d="M51.889 3.7071L51.5355 3.35355L48.3535 6.53553L48.7071 6.88908L51.889 3.7071Z"
+              fill="#DC143C"
+              stroke="black"
+              stroke-width="0.5"
+            />
+            <path
+              d="M48.7072 3.64645L48.3536 4L51.5356 7.18198L51.8891 6.82843L48.7072 3.64645Z"
+              fill="#DC143C"
+              stroke="black"
+              stroke-width="0.5"
+            />
+          </svg>
+        </header>
+        <main>
+          <div>
+            <section>
+              <h2>What is progressive enhancement?</h2>
+              <p>
+                The web is filled with websites for all sorts of subjects and
+                goals; web shops to buy clothes, information sites for writing
+                research papers, cooking blogs for following recipes and many
+                more. These websites should be accessible to everyone, no matter
+                what situation they are in. For this we use progressive
+                enhancement.
+              </p>
+              <p>
+                But ... What is it?
+                <span>Progressive enhancement</span> is a way of thinking, to
+                ensure that the basic functionality is accessible to everyone
+                but where the experience increases in a process depending on
+                various factors. To explain this, we came up with a visual
+                metaphor.
+              </p>
+            </section>
+            <section>
+              <h2>Our metaphor:</h2>
+              <p>
+                A good way to explain progressive enhancement is via a
+                <span>birthday cake</span>. The key goal of the cake is to be
+                eaten and this should always be achievable. The base cake itself
+                serves as the reliable core, everything besides the cake only
+                serves to enhance the experience of eating cake. By adding
+                frosting the becomes tastier and more pleasurable to look at.
+                Finally, you can add candles to show how old you turned and
+                eventually blow them out. This makes the cake useful. The
+                frosting and the candles both create a more fun and enjoyable
+                experience, but neither of these are necessary to achieve the
+                goal of eating a of cake.
+              </p>
+            </section>
+            <div class="cake-container">
+              <div>
+                <p>HTML</p>
+                <img src="assets/images/basic-cake.svg" alt="" />
+              </div>
+              <div>
+                <p>CSS</p>
+                <img src="assets/images/decorated-cake.svg" alt="" />
+              </div>
 
-<body>
-	<div>
-		<div>
-			<header>
-				<h1>Progressive Enhancement Explained</h1>
-				<svg width="100" height="99" viewBox="0 0 100 99" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M99.5 54V98.5H0.5V54C0.5 26.6619 22.6619 4.5 50 4.5C77.3381 4.5 99.5 26.6619 99.5 54Z"
-						fill="#DC143C" stroke="black" />
-					<path d="M16 40H15V41H16V40Z" fill="#DC143C" />
-					<path d="M38.5 34.5H14.5V58.5H38.5V34.5Z" fill="#DC143C" stroke="black" />
-					<path d="M34 39H19V54H34V39Z" fill="black" />
-					<path d="M85.5 34.5H61.5V58.5H85.5V34.5Z" fill="#DC143C" stroke="black" />
-					<path d="M65.5 67.5H34.5V91.5H65.5V67.5Z" fill="#DC143C" stroke="black" />
-					<path d="M81 39H66V54H81V39Z" fill="black" />
-					<path d="M60.5 71.5H39.5V87.5H60.5V71.5Z" fill="black" stroke="black" />
-					<path d="M52.5 7.5H47.5V13.5H52.5V7.5Z" fill="#DC143C" stroke="black" />
-					<path
-						d="M56.5 5C56.5 6.17733 55.8328 7.29036 54.6591 8.12867C53.4865 8.96629 51.8408 9.5 50 9.5C48.1592 9.5 46.5135 8.96629 45.3409 8.12867C44.1672 7.29036 43.5 6.17733 43.5 5C43.5 3.82267 44.1672 2.70964 45.3409 1.87133C46.5135 1.03371 48.1592 0.5 50 0.5C51.8408 0.5 53.4865 1.03371 54.6591 1.87133C55.8328 2.70964 56.5 3.82267 56.5 5Z"
-						fill="#DC143C" stroke="black" />
-					<path d="M14.4018 10.4759L10.8568 14.0019L15.088 18.2559L18.633 14.7299L14.4018 10.4759Z"
-						fill="#DC143C" stroke="black" />
-					<path
-						d="M15.0976 5.89762C15.9278 6.73235 16.2397 7.99204 15.9987 9.41405C15.758 10.8349 14.9676 12.3738 13.6625 13.672C12.3573 14.9701 10.8142 15.7522 9.39205 15.9853C7.96876 16.2186 6.71077 15.9 5.88052 15.0653C5.05026 14.2305 4.73843 12.9708 4.97936 11.5488C5.2201 10.128 6.0105 8.58905 7.31564 7.29092C8.62078 5.99278 10.1639 5.21066 11.5861 4.97757C13.0093 4.74429 14.2673 5.06289 15.0976 5.89762Z"
-						fill="#DC143C" stroke="black" />
-					<path d="M11.889 8.7071L11.5355 8.35355L8.35351 11.5355L8.70706 11.8891L11.889 8.7071Z"
-						fill="#DC143C" stroke="black" stroke-width="0.5" />
-					<path d="M8.7071 8.64645L8.35355 9L11.5355 12.182L11.8891 11.8284L8.7071 8.64645Z" fill="#DC143C"
-						stroke="black" stroke-width="0.5" />
-					<path d="M85.9384 10.4759L89.4834 14.0019L85.2522 18.2559L81.7072 14.7299L85.9384 10.4759Z"
-						fill="#DC143C" stroke="black" />
-					<path
-						d="M85.2426 5.89762C84.4123 6.73235 84.1005 7.99204 84.3414 9.41405C84.5821 10.8349 85.3725 12.3738 86.6777 13.672C87.9828 14.9701 89.526 15.7522 90.9481 15.9853C92.3714 16.2186 93.6294 15.9 94.4596 15.0653C95.2899 14.2305 95.6017 12.9708 95.3608 11.5488C95.1201 10.128 94.3296 8.58905 93.0245 7.29092C91.7194 5.99278 90.1762 5.21066 88.7541 4.97757C87.3308 4.74429 86.0728 5.06289 85.2426 5.89762Z"
-						fill="#DC143C" stroke="black" />
-					<path d="M88.451 8.7071L88.8046 8.35355L91.9866 11.5355L91.633 11.8891L88.451 8.7071Z"
-						fill="#DC143C" stroke="black" stroke-width="0.5" />
-					<path d="M91.633 8.64645L91.9866 9L88.8046 12.182L88.4511 11.8284L91.633 8.64645Z" fill="#DC143C"
-						stroke="black" stroke-width="0.5" />
-					<path d="M51.889 3.7071L51.5355 3.35355L48.3535 6.53553L48.7071 6.88908L51.889 3.7071Z"
-						fill="#DC143C" stroke="black" stroke-width="0.5" />
-					<path d="M48.7072 3.64645L48.3536 4L51.5356 7.18198L51.8891 6.82843L48.7072 3.64645Z" fill="#DC143C"
-						stroke="black" stroke-width="0.5" />
-				</svg>
-			</header>
-			<main>
-				<div>
-					<h2>
-						What is progressive enhancement?
-					</h2>
-					<p>
-						The web is filled with websites for all sorts of subjects and goals; webshops to buy clothes,
-						information sites for writing research papers, cooking blogs for following recipes and many
-						more. These websites should be accessible to everyone, no matter what situation they are in. For
-						this we use progressive enhancement. But to explain progressive enhancement we first need to
-						loot at what makes up a website; html, css and javascript.
-					</p>
-					<p>
-						A good way to explain progressive enhancement is via a birthday cake metaphor. The key goal of the cake is to be eaten and this should always be achievable. The base cake itself serves as the core, everything besides the cake only serves to enhance the experience of eating cake. By adding frosting the becomes tastier and prettier to look at. Finally, you can add candles to show how old you turned and eventually blow them out. The frosting and the candles both create a more fun and enjoyable experience, but neither of these are necessary to achieve the goal of eating a tasty piece of cake
-					</p>
-					<div class="cake-container">
-						<div>
-							<p>HTML</p>
-							<img src="assets/images/basic-cake.svg" alt="">
-						</div>
-						<div>
-							<p>CSS</p>
-							<img src="assets/images/decorated-cake.svg" alt="">
-						</div>
+              <div>
+                <p>JS</p>
+                <img src="assets/images/candle-cake.svg" alt="" />
+              </div>
+            </div>
+            <p>
+              HTML creates content and structure. With paragraphes, headers and
+              links you can give a website content. It is important that the key
+              features of the website are created in the HTML. This means that
+              text and images should be written straight into the HTML instead
+              of being injected with javascript. It is also important to use the
+              correct tags; headers should go into a H1, H2, H3 etcetera.
+              Content like a navigation, a link and a footer all have specific
+              elements that can be used to make the user’s experience as
+              pleasant as possible. Using these correct tags also benefits
+              screen readers greatly.
+            </p>
+            <p>
+              CSS makes the website pleasant to look at, whether with some nice
+              styling or by making the website responsive. It is important that
+              CSS does not add any key features, only additions. This is
+              because, for example a screen reader, can not convey the styling
+              to a user who is blind. Yes, CSS can give many great additions to
+              a website nowadays, with responsive styling, grid layouts, dark or
+              light theme detection and many more incredible features. But these
+              should and can not be used for key features that will help the
+              user reach their goal.
+            </p>
 
-						<div>
-							<p>JS</p>
-							<img src="assets/images/candle-cake.svg" alt="">
-						</div>
-					</div>
-					<p>
-						HTML creates content and structure. With paragraphes, headers and links you can give a website
-						content. It is important that the key features of the website are created in the HTML. This
-						means that text and images should be written straight into the HTML instead of being injected
-						with javascript. It is also important to use the correct tags; headers should go into a H1, H2,
-						H3 etcetera. Content like a navigation, a link and a footer all have specific elements that can
-						be used to make the user’s experience as pleasant as possible. Using these correct tags also
-						benefits screen readers greatly.
-					</p>
-					<p>
-						CSS makes the website pleasant to look at, whether with some nice styling or by making the
-						website responsive. It is important that CSS does not add any key features, only additions. This
-						is because, for example a screen reader, can not convey the styling to a user who is blind. Yes,
-						CSS can give many great additions to a website nowadays, with responsive styling, grid layouts,
-						dark or light theme detection and many more incredible features. But these should and can not be
-						used for key features that will help the user reach their goal.
-					</p>
-					
-					<p>
-						It is almost unimaginable, a website without JavaScript. Yet there are still many cases where
-						JavaScript can simply not be used. Think of older browsers, bad internet connections, old and
-						lesser quality devices. In these circumstances, JavaScript files will often either not be loaded
-						as they should or not be loaded at all. This is why it is important to not add any important
-						features with javascript, you could potentially lock a lot of people out of your website by
-						accident.
-					</p>
-					<p>
-						Progressive enhancement is not just useful for people with a permanent disability, it can help a
-						lot of people with their experience on your website. For example, someone with a broken dominant
-						arm will have to use the keyboard to navigate a hospital website to book an appointment, a user
-						with bad internet might still want to look at a news website, a user who lost their glasses
-						might need a high contrast or a zoom function to be able to order new glasses and a driver might
-						need to have as little distractions as possible when looking for an address. These people are
-						often few but does that mean that we should exclude them completely? Of course not. This is why
-						progressive enhancement is so important, users should be able to use a website no matter what
-						specific situation they are currently in.
-					</p>
-					<p>
-						So how do you build a progressive enhanced website? You start off with your basic HTML; text in
-						the corresponding HTML tags, forms in pure HTML and a navigation for ease of use. Once the HTML
-						is finished, the website should be fully usable to reach a goal. Now this experience does not
-						have to be ideal, you will likely have to substitute certain features only usable with
-						Javascript for alternatives. With progressive enhancement, you aim for the best possible
-						experience with what is available. The next step to creating a progressively enhanced website is
-						adding CSS. CSS supports quite a lot of handy media queries which can greatly help with building
-						a progressively enhanced website. For example, you can adjust your website for people who wish
-						to have reduced motion due to epilepsy or for people who wish to view the web with a higher
-						contract due to difficulty with reading. These and a lot of other media queries help greatly
-						with creating a progressively enhanced website. Once again, at this point your website should be
-						fully usable to reach a goal. Finally, you can add JavaScript to add final additions to your
-						website to enhance the user’s experience.
-					</p>
-				</div>
-			</main>
-		</div>
-		<footer>
-			<section>
-				<h3>Resources</h3>
-				<ul>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement">Progressive
-							Enhancement</a></li>
-					<li><a href="https://blog.logrocket.com/a-quick-introduction-to-progressive-enhancement/">A quick
-							introduction to progressive enhancement</a></li>
-					<li><a href="https://alistapart.com/article/understandingprogressiveenhancement/">Understanding
-							progressive enhancement</a></li>
-					<li><a href="https://briefs.video/videos/is-progressive-enhancement-dead-yet/">Is progressive
-							enhancement dead yet?</a></li>
-				</ul>
-			</section>
-			<aside>
-				<h3>A website by: Roodbots A1</h3>
-				<ul>
-					<li><a href="https://github.com/SharonV33">Sharon</a></li>
-					<li><a href="https://github.com/veerleprins">Veerle</a></li>
-					<li><a href="https://github.com/Chazzers">Chazz</a></li>
-					<li><a href="https://github.com/qiubee">Kevin</a></li>
-				</ul>
-			</aside>
-		</footer>
-	</div>
-</body>
-
+            <p>
+              It is almost unimaginable, a website without JavaScript. Yet there
+              are still many cases where JavaScript can simply not be used.
+              Think of older browsers, bad internet connections, old and lesser
+              quality devices. In these circumstances, JavaScript files will
+              often either not be loaded as they should or not be loaded at all.
+              This is why it is important to not add any important features with
+              javascript, you could potentially lock a lot of people out of your
+              website by accident.
+            </p>
+            <p>
+              Progressive enhancement is not just useful for people with a
+              permanent disability, it can help a lot of people with their
+              experience on your website. For example, someone with a broken
+              dominant arm will have to use the keyboard to navigate a hospital
+              website to book an appointment, a user with bad internet might
+              still want to look at a news website, a user who lost their
+              glasses might need a high contrast or a zoom function to be able
+              to order new glasses and a driver might need to have as little
+              distractions as possible when looking for an address. These people
+              are often few but does that mean that we should exclude them
+              completely? Of course not. This is why progressive enhancement is
+              so important, users should be able to use a website no matter what
+              specific situation they are currently in.
+            </p>
+            <p>
+              So how do you build a progressive enhanced website? You start off
+              with your basic HTML; text in the corresponding HTML tags, forms
+              in pure HTML and a navigation for ease of use. Once the HTML is
+              finished, the website should be fully usable to reach a goal. Now
+              this experience does not have to be ideal, you will likely have to
+              substitute certain features only usable with Javascript for
+              alternatives. With progressive enhancement, you aim for the best
+              possible experience with what is available. The next step to
+              creating a progressively enhanced website is adding CSS. CSS
+              supports quite a lot of handy media queries which can greatly help
+              with building a progressively enhanced website. For example, you
+              can adjust your website for people who wish to have reduced motion
+              due to epilepsy or for people who wish to view the web with a
+              higher contract due to difficulty with reading. These and a lot of
+              other media queries help greatly with creating a progressively
+              enhanced website. Once again, at this point your website should be
+              fully usable to reach a goal. Finally, you can add JavaScript to
+              add final additions to your website to enhance the user’s
+              experience.
+            </p>
+          </div>
+        </main>
+      </div>
+      <footer>
+        <section>
+          <h3>Resources</h3>
+          <ul>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement"
+                >Progressive Enhancement</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://blog.logrocket.com/a-quick-introduction-to-progressive-enhancement/"
+                >A quick introduction to progressive enhancement</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://alistapart.com/article/understandingprogressiveenhancement/"
+                >Understanding progressive enhancement</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://briefs.video/videos/is-progressive-enhancement-dead-yet/"
+                >Is progressive enhancement dead yet?</a
+              >
+            </li>
+          </ul>
+        </section>
+        <aside>
+          <h3>A website by: Roodbots A1</h3>
+          <ul>
+            <li><a href="https://github.com/SharonV33">Sharon</a></li>
+            <li><a href="https://github.com/veerleprins">Veerle</a></li>
+            <li><a href="https://github.com/Chazzers">Chazz</a></li>
+            <li><a href="https://github.com/qiubee">Kevin</a></li>
+          </ul>
+        </aside>
+      </footer>
+    </div>
+  </body>
 </html>
