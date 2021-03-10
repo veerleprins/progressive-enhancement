@@ -1,6 +1,9 @@
 :root {
   --main-color: #000;
   --secondary-color: #fff;
+  --bg-color-main: #293133;
+  --bg-color-cake: #183133;
+  --hover-link: #dc143c;
 }
 
 * {
@@ -11,27 +14,34 @@
   padding: 0;
 }
 
-main {
-  margin: 1rem 10vw;
+body {
+  background-color: var(--secondary-color);
+  color: var(--bg-color-main);
 }
 
-main > div {
-  margin: 0 auto;
-  max-width: 680px;
+a {
+  color: var(--secondary-color);
+}
+
+span {
+  font-weight: bold;
 }
 
 header {
   display: flex;
-  background-color: var(--main-color);
-  padding: 1rem 10vw;
+  background-color: var(--bg-color-main);
+  padding: 0.5rem 10vw;
   margin: 0;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1 {
-  color: var(--secondary-color);
-  margin: 0;
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--hover-link);
 }
 
 header svg {
@@ -39,18 +49,66 @@ header svg {
   width: auto;
 }
 
-header > div {
-  height: 100%;
+main {
+  margin: 1rem 10vw;
 }
 
-body {
-  margin: 0;
+main h1 {
+  text-align: center;
+}
+
+main > div {
+  margin: 0 auto;
+  max-width: 700px;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+}
+
+main div blockquote {
+  background-color: var(--bg-color-main);
+  color: var(--secondary-color);
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+
+main div > section {
+  background-color: rgb(227, 227, 227);
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}
+
+main div > section p {
+  margin-top: 1em;
+}
+
+main article section {
+  display: flex;
+  border-radius: 1em;
+  background-color: var(--bg-color-main);
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+main article section div {
+  flex: 1 1 100%;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+main article section aside {
+  flex: 1 1 100%;
+  margin: 0.5rem;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  padding: 1rem;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
-  background-color: var(--main-color);
+  background-color: var(--bg-color-main);
   padding: 2rem 10vw;
   color: var(--secondary-color);
   flex-wrap: wrap;
@@ -64,58 +122,4 @@ footer ul {
 
 footer section {
   margin-right: 2rem;
-}
-
-body > div {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-between;
-}
-
-a {
-  color: var(--secondary-color);
-}
-
-.cake-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cake-container img {
-  width: 100%;
-  height: auto;
-}
-
-.cake-container div {
-  margin-right: 1rem;
-  flex: 1 1 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cake-container div:last-of-type {
-  margin-right: 0;
-}
-
-.cake-container p {
-  height: 100%;
-  margin-right: 1rem;
-  text-align: center;
-}
-
-span {
-  font-weight: bold;
-}
-
-main > div > section {
-  padding: 2em;
-  border-radius: 0.5em;
-  background-color: #e5e5e5;
-  margin-bottom: 2em;
-}
-
-section p:nth-of-type(1) {
-  margin-bottom: 1em;
 }
